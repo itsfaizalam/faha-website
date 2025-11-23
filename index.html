@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FAHA Footwear – Step Into Comfort</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f8f5f2;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 18px;
+    }
+    .tagline {
+      font-size: 12px;
+      color: #777;
+    }
+    .btn-primary {
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      background: #111827;
+      color: #fff;
+    }
+    main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 64px; }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+      gap: 28px;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+    .hero h1 {
+      font-size: clamp(30px, 4vw, 40px);
+      margin-bottom: 12px;
+    }
+    .hero p { font-size: 15px; color: #555; margin-bottom: 18px; }
+    .hero-note { font-size: 12px; color: #888; }
+    .hero-card {
+      background: #111827;
+      color: #f9fafb;
+      border-radius: 18px;
+      padding: 24px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .hero-card h2 { font-size: 18px; margin-bottom: 10px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      background: #fbbf24;
+      color: #111827;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 16px;
+      border: 1px solid #eee;
+    }
+    .card h3 { font-size: 15px; margin-bottom: 6px; }
+    .card p { font-size: 13px; color: #666; }
+    .badge { font-size: 11px; color: #555; margin-bottom: 4px; }
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #22c55e;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .whatsapp-btn span { font-size: 18px; }
+    footer {
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+      padding: 16px;
+      border-top: 1px solid #eee;
+      background: #fff;
+    }
+    @media (max-width: 768px) {
+      header { flex-direction: column; align-items: flex-start; gap: 6px; }
+      .hero { grid-template-columns: 1fr; }
+      main { padding-top: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="logo">FAHA</div>
+      <div class="tagline">Every Step, Styled With Comfort</div>
+    </div>
+    <button class="btn-primary" onclick="location.href='#catalog'">View Collection</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Premium Ladies Footwear – Stylish, Comfortable, Everyday Ready.</h1>
+        <p>
+          FAHA me aapko milti hai daily wear se leke festive occasions tak ke liye
+          handpicked footwear – jisme design bhi modern hai aur comfort bhi.
+        </p>
+        <a class="whatsapp-btn"
+           href="https://wa.me/91XXXXXXXXXX?text=Hi%20FAHA,%20mujhe%20footwear%20collection%20dekhni%20hai."
+           target="_blank">
+          <span>💬</span> Order / Enquiry on WhatsApp
+        </a>
+        <p class="hero-note">
+          *Online store jald aa raha hai. Filhaal WhatsApp par direct order karein.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <div>
+          <div class="pill">New Brand • FAHA</div>
+          <h2>Perfect For Daily Wear, Office & Functions</h2>
+          <p style="font-size:13px; color:#e5e7eb;">
+            Soft padding, comfortable sole, aur elegant designs jo poore din pehne jaa sakte hain –
+            bina pain ke.
+          </p>
+        </div>
+        <div style="font-size:12px; color:#9ca3af; margin-top:10px;">
+          Sizes: 36–41 • Cash on Delivery (selected pincodes) • Fast dispatch
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog">
+      <h2 style="font-size:20px; margin-bottom:12px;">Featured Categories</h2>
+      <p style="font-size:13px; color:#555; margin-bottom:16px;">
+        Yeh sirf demo hai – baad me aap yahan real product photos, prices aur details add kar sakte ho.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="badge">New</div>
+          <h3>Everyday Flats</h3>
+          <p>Comfortable flats jo daily office, college ya market ke liye perfect hain.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Best Seller</div>
+          <h3>Cushioned Sandals</h3>
+          <p>Soft sole + stylish design for long day comfort without compromising looks.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Festive</div>
+          <h3>Embroidered Mojris</h3>
+          <p>Traditional touch with modern comfort – functions, weddings & festive wear.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Office Wear</div>
+          <h3>Low Block Heels</h3>
+          <p>Formal yet comfortable heels for all-day office use.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> FAHA. All rights reserved. | Instagram: @faha.official
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
