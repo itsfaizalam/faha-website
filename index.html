@@ -169,69 +169,147 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Product 1 -->
-          <div
-            class="bg-white rounded-2xl overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
-            <div class="h-[250px] bg-[#eee] relative flex items-center justify-center overflow-hidden">
-              <img src="assets/images/sneaker-easy.webp" alt="Comfortable Sneakers"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-6">
-              <div class="flex justify-between items-center mb-2">
-                <h3 class="font-logo text-primary text-[1.1rem] font-semibold">Comfortable Sneakers</h3>
-                <span class="text-[0.8rem] bg-gray-200 px-2 py-0.5 rounded-[10px]">Best Seller</span>
+          <div class="group bg-white rounded-2xl overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
+            <!-- Image Wrapper -->
+            <div class="h-[250px] bg-[#eee] relative overflow-hidden">
+
+              <!-- Product Image -->
+              <img src="assets/images/sneaker-easy.webp"
+                  alt="Comfortable Sneakers"
+                  class="absolute inset-0 w-full h-full object-cover
+                          transition-transform duration-500 group-hover:scale-105" />
+
+              <!-- ✅ Hover Overlay -->
+              <div class="absolute inset-0 bg-black/40
+                          opacity-0 group-hover:opacity-100
+                          transition-opacity duration-300">
               </div>
+
+              <!-- Badge -->
+              <span class="absolute bottom-3 right-3
+                          text-[0.7rem] font-semibold uppercase
+                          bg-primary text-white
+                          px-3 py-1 rounded-full shadow-md z-10">
+                Best Seller
+              </span>
+
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+              <h3 class="font-logo text-primary text-[1.1rem] font-semibold mb-2">
+                Comfortable Sneakers
+              </h3>
+
               <p class="text-[0.9rem] text-text-light mb-4">
                 Perfect for office and daily errands.
               </p>
-              <a href="https://wa.me/918968661029?text=I'm%20interested%20in%20Everyday%20Flats" target="_blank"
-                class="inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold text-[0.9rem] bg-primary text-surface hover:bg-primary-light hover:-translate-y-px transition-all duration-300 w-full">
+
+              <!-- CTA -->
+              <a href="https://wa.me/918968661029?text=I'm%20interested%20in%20Comfortable%20Sneakers"
+                target="_blank"
+                class="inline-flex items-center justify-center
+                        px-6 py-3 rounded-full font-semibold text-[0.9rem]
+                        bg-primary text-surface
+                        hover:bg-primary-light hover:-translate-y-px
+                        transition-all duration-300 w-full">
                 Inquire Now
               </a>
             </div>
           </div>
 
-
           <!-- Product 2 -->
-          <div
-            class="bg-white rounded-2xl overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
-            <div class="h-[250px] bg-[#eee] relative flex items-center justify-center overflow-hidden">
-              <img src="assets/images/cushioned-sandals.webp" alt="Cushioned Sandals"
-                class="absolute inset-0 w-full h-full object-cover" />
+          <div class="group bg-white rounded-2xl overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
+            <!-- Image Wrapper -->
+            <div class="h-[250px] bg-[#eee] relative overflow-hidden">
+
+              <!-- Product Image -->
+              <img src="assets/images/cushioned-sandals.webp"
+                  alt="Cushioned Sandals"
+                  class="absolute inset-0 w-full h-full object-cover
+                          transition-transform duration-500 group-hover:scale-105" />
+
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-black/40
+                          opacity-0 group-hover:opacity-100
+                          transition-opacity duration-300"></div>
+
+              <!-- Badge -->
+              <span class="absolute bottom-3 right-3
+                          text-[0.7rem] font-semibold uppercase
+                          bg-green-600 text-white
+                          px-3 py-1 rounded-full shadow-md z-10">
+                New
+              </span>
+
             </div>
+
+            <!-- Content -->
             <div class="p-6">
-              <div class="flex justify-between items-center mb-2">
-                <h3 class="font-logo text-primary text-[1.1rem] font-semibold">Cushioned Sandals</h3>
-                <span class="text-[0.8rem] bg-gray-200 px-2 py-0.5 rounded-[10px]">New</span>
-              </div>
+              <h3 class="font-logo text-primary text-[1.1rem] font-semibold mb-2">
+                Cushioned Sandals
+              </h3>
+
               <p class="text-[0.9rem] text-text-light mb-4">
                 Style meets comfort for long days.
               </p>
-              <a href="https://wa.me/918968661029?text=I'm%20interested%20in%20Cushioned%20Sandals" target="_blank"
-                class="inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold text-[0.9rem] bg-primary text-surface hover:bg-primary-light hover:-translate-y-px transition-all duration-300 w-full">
+
+              <a href="https://wa.me/918968661029?text=I'm%20interested%20in%20Cushioned%20Sandals"
+                target="_blank"
+                class="inline-flex items-center justify-center
+                        px-6 py-3 rounded-full font-semibold text-[0.9rem]
+                        bg-primary text-surface
+                        hover:bg-primary-light hover:-translate-y-px
+                        transition-all duration-300 w-full">
                 Inquire Now
               </a>
             </div>
           </div>
-
-
+          
           <!-- Product 3 -->
-          <div
-            class="bg-white rounded-2xl overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
+          <div class="group bg-white rounded-2xl overflow-hidden shadow-sm transition-transform duration-300 hover:-translate-y-1">
 
-            <div class="h-[250px] bg-[#eee] relative flex items-center justify-center overflow-hidden">
-              <img src="assets/images/festive-mojris.webp" alt="Festive Mojris"
-                class="absolute inset-0 w-full h-full object-cover" />
+            <!-- Image Wrapper -->
+            <div class="h-[250px] bg-[#eee] relative overflow-hidden">
+
+              <!-- Product Image -->
+              <img src="assets/images/festive-mojris.webp"
+                  alt="Festive Mojris"
+                  class="absolute inset-0 w-full h-full object-cover
+                          transition-transform duration-500 group-hover:scale-105" />
+
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-black/40
+                          opacity-0 group-hover:opacity-100
+                          transition-opacity duration-300"></div>
+
+              <!-- Badge -->
+              <span class="absolute bottom-3 right-3
+                          text-[0.7rem] font-semibold uppercase
+                          bg-accent text-white
+                          px-3 py-1 rounded-full shadow-md z-10">
+                Trending
+              </span>
+
             </div>
+
+            <!-- Content -->
             <div class="p-6">
-              <div class="flex justify-between items-center mb-2">
-                <h3 class="font-logo text-primary text-[1.1rem] font-semibold">Festive Mojris</h3>
-                <span class="text-[0.8rem] bg-accent px-2 py-0.5 rounded-[10px]">Trending</span>
-              </div>
+              <h3 class="font-logo text-primary text-[1.1rem] font-semibold mb-2">
+                Festive Mojris
+              </h3>
+
               <p class="text-[0.9rem] text-text-light mb-4">
                 Traditional elegance for special occasions.
               </p>
-              <a href="https://wa.me/918968661029?text=I'm%20interested%20in%20Festive%20Mojris" target="_blank"
-                class="inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold text-[0.9rem] bg-primary text-surface hover:bg-primary-light hover:-translate-y-px transition-all duration-300 w-full">
+
+              <a href="https://wa.me/918968661029?text=I'm%20interested%20in%20Festive%20Mojris"
+                target="_blank"
+                class="inline-flex items-center justify-center
+                        px-6 py-3 rounded-full font-semibold text-[0.9rem]
+                        bg-primary text-surface
+                        hover:bg-primary-light hover:-translate-y-px
+                        transition-all duration-300 w-full">
                 Inquire Now
               </a>
             </div>
@@ -361,13 +439,16 @@
           </div>
         </div>
       </div>
-
     </section>
   </main>
 
   <footer id="contact" class="bg-[#111] text-[#888] py-12 text-[0.9rem]">
     <div class="max-w-[1200px] mx-auto px-6">
-      <div class="flex flex-wrap justify-between gap-8">
+      <!-- <div class="flex flex-wrap justify-between gap-8"> -->
+        <div class="flex flex-col gap-8
+            sm:flex-col
+            md:grid md:grid-cols-2
+            lg:flex lg:flex-row lg:justify-between">
         <div>
           <a href="https://faha.in" class="inline-block">
             <div class="logo-container">
