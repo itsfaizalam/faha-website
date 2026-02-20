@@ -33,31 +33,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     // FAQ Accordion Logic
-    const faqButtons = document.querySelectorAll('.faq-btn');
+    const faqButtons = document.querySelectorAll(".faq-btn");
 
-    faqButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('svg');
+        faqButtons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector(".icon");
 
-            // Toggle current item
-            content.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-
-            // Optional: Close other items
-            faqButtons.forEach(otherButton => {
-                if (otherButton !== button) {
-                    const otherContent = otherButton.nextElementSibling;
-                    const otherIcon = otherButton.querySelector('svg');
-
-                    if (!otherContent.classList.contains('hidden')) {
-                        otherContent.classList.add('hidden');
-                        otherIcon.classList.remove('rotate-180');
-                    }
+            document.querySelectorAll(".faq-content").forEach((item) => {
+                if (item !== content) {
+                item.classList.add("hidden");
+                item.previousElementSibling
+                    .querySelector(".icon").textContent = "+";
                 }
             });
+
+            content.classList.toggle("hidden");
+            icon.textContent = content.classList.contains("hidden") ? "+" : "−";
+            });
         });
-    });
+
 });
 
 
